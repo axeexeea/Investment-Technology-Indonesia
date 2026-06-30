@@ -3333,13 +3333,23 @@ Terima kasih.`
 
 function sendDemo(){
 
-    let nama=document.getElementById("nama").value;
-    let perusahaan=document.getElementById("perusahaan").value;
-    let email=document.getElementById("email").value;
-    let telepon=document.getElementById("telepon").value;
+
+    let nama=document.getElementById("nama").value.trim();
+    let perusahaan=document.getElementById("perusahaan").value.trim();
+    let email=document.getElementById("email").value.trim();
+    let telepon=document.getElementById("telepon").value.trim();
     let layanan=document.getElementById("layanan").value;
-    let budget=document.getElementById("budget").value;
-    let kebutuhan=document.getElementById("kebutuhan").value;
+    let budget=document.getElementById("budget").value.trim();
+    let kebutuhan=document.getElementById("kebutuhan").value.trim();
+
+    // VALIDASI
+    if(nama==="" || telepon==="" || kebutuhan===""){
+
+        alert("Silakan isi Nama, Nomor WhatsApp, dan Kebutuhan Proyek terlebih dahulu.");
+
+        return;
+
+    }
 
     let pesan=`Halo Investment Technology Indonesia
 
@@ -3365,7 +3375,6 @@ ${kebutuhan}`;
         "https://wa.me/6285283397198?text="+encodeURIComponent(pesan),
         "_blank"
     );
-
 }
 
 </script>
