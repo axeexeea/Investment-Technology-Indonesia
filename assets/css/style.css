@@ -1,0 +1,129 @@
+/* ========================= */
+/* HEADER */
+/* ========================= */
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#111;
+
+    color:#fff;
+
+}
+
+.container{
+
+    width:90%;
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+.navbar{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    z-index:999;
+
+    background:rgba(20,20,20,.75);
+
+    backdrop-filter:blur(12px);
+
+    border-bottom:1px solid rgba(255,255,255,.08);
+
+}
+
+.nav-wrapper{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    height:80px;
+
+}
+
+.logo{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+    font-size:18px;
+
+}
+
+.logo img{
+
+    width:50px;
+
+}
+
+.nav-menu{
+
+    display:flex;
+
+    list-style:none;
+
+    gap:30px;
+
+}
+
+.nav-menu a{
+
+    color:white;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+}
+
+.nav-menu a:hover{
+
+    color:#ff4040;
+
+}
+
+.btn-demo{
+
+    background:#ff2d2d;
+
+    color:#fff;
+
+    padding:12px 24px;
+
+    border-radius:40px;
+
+    text-decoration:none;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+.btn-demo:hover{
+
+    background:#d80000;
+
+}
